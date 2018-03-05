@@ -1,0 +1,35 @@
+body
+  font-size: 14px
+  font-weight: normal
+  display: flex
+  flex-direction: column
+  align-items: center
+
+=hv
+  &:hover
+    @content
+
+=actv
+  &:active
+    @content
+
+=tr($s)
+  transition: all $s
+
+.cl
+  width: 30%
+  height: 30px
+  background: green
+  +tr(.5s)
+  cursor: pointer
+  
+  +hv
+    background: red
+    width: 100%
+  +actv
+    background: yellow
+
+.block
+  width: 100%
+  height: 500px
+  background: red

@@ -1,0 +1,8 @@
+wordpress
+node_modules
+php
+dist
+psd
+*.zip
+*.rar
+*.log
